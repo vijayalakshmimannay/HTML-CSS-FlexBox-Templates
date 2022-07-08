@@ -22,10 +22,17 @@
   #main > nav {
     order: -1;
   }
-  header, footer, article, nav, aside {
+
+  header, footer
+   article, nav, aside {
     padding: 1em;
   }
   header, footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
     background: yellowgreen;
+    font-weight: bold;
+    font-size: 35px;
     height: 20vh;
   }
