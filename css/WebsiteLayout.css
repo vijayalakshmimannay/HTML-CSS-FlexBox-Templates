@@ -1,36 +1,31 @@
-* {
-    box-sizing: border-box; 
+ * {
+   box-sizing: border-box; 
   }
   body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     margin: 0;
   }
   #main {
     display: flex;
-    flex: 1;
+    min-height: calc(100vh - 40vh);
   }
   #main > article {
     flex: 1;
-    order: 1;
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
   }
   #main > nav, 
   #main > aside {
     flex: 0 0 20vw;
+    background: rgb(198, 115, 188);
   }
   #main > nav {
-    background: #D7E8D4;
-    order: 3;
+    order: -1;
   }
-  #main > aside {
-    background: beige;
-    order: 2;
+  header, footer, article, nav, aside {
+    padding: 1em;
   }
   header, footer {
     background: yellowgreen;
     height: 20vh;
-  }
-  header, footer, article, nav, aside {
-    padding: 1em;
   }
